@@ -81,7 +81,7 @@ namespace Mobivate
                     url = string.Format(RoutesUrl, SessionID);
                     break;
                 default:
-                    break;
+                    throw new Exception("Request type required");
             }
 
             var webRequest = (HttpWebRequest)WebRequest.Create(url);
