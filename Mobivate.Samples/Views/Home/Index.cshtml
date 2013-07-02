@@ -1,0 +1,45 @@
+﻿@model Mobivate.Samples.Models.MobivateModel
+@{
+    ViewBag.Title = "Mobivate SMS";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more signup for an account at <a href="http://www.mobivate.com/">http://www.mobivate.com/</a>
+            </p>
+        </div>
+    </section>
+}
+<h3>We suggest the following:</h3>
+@using(Html.BeginForm("SendSMS","Home", FormMethod.Post, new {}))
+{
+<ol class="round">
+    <li class="one">
+        <h5>Enter account details</h5>
+        <p></p>
+        @Html.TextBoxFor(m => m.Username, new { placeholder = "Username" })
+        @Html.TextBoxFor(m => m.Password, new { placeholder = "Password" })
+    </li>
+
+    <li class="two">
+        <h5>Eneter recipient and originator</h5>
+        <p></p>
+        @Html.TextBoxFor(m => m.From, new { placeholder = "From" })
+        @Html.TextBoxFor(m => m.To, new { placeholder = "To" })
+    </li>
+
+    <li class="three">
+        <h5>Enter message body</h5>
+        <p></p>
+        @Html.TextAreaFor(m => m.Body)
+    </li>
+    <li>
+        <input type="submit" value="send" />
+    </li>
+</ol>
+}

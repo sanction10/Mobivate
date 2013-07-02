@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobivate", "Mobivate\Mobivate.csproj", "{822795A3-5CC9-449A-96A2-20FF51320993}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{7105ED67-6D99-495A-8042-7B9812FF897D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobivate.Samples", "Mobivate.Samples\Mobivate.Samples.csproj", "{F08EEB37-A1E8-4EA0-AC02-3D133A782B05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +17,15 @@ Global
 		{822795A3-5CC9-449A-96A2-20FF51320993}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{822795A3-5CC9-449A-96A2-20FF51320993}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{822795A3-5CC9-449A-96A2-20FF51320993}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08EEB37-A1E8-4EA0-AC02-3D133A782B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08EEB37-A1E8-4EA0-AC02-3D133A782B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08EEB37-A1E8-4EA0-AC02-3D133A782B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08EEB37-A1E8-4EA0-AC02-3D133A782B05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F08EEB37-A1E8-4EA0-AC02-3D133A782B05} = {7105ED67-6D99-495A-8042-7B9812FF897D}
 	EndGlobalSection
 EndGlobal

@@ -70,7 +70,7 @@ namespace Mobivate
             switch (type)
             {
                 case RequestType.Login:
-                    string.Format(Authentication, _username, _password);
+                    url = string.Format(Authentication, _username, _password);
                     break;
                 case RequestType.BatchMessage:
                     throw new NotImplementedException();
